@@ -1,0 +1,146 @@
+@font-face {
+    font-family: 'sansation';
+    src: url('../fonts/sansation_regular-webfont.eot');
+    src: url('../fonts/sansation_regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/sansation_regular-webfont.woff') format('woff'),
+         url('../fonts/sansation_regular-webfont.ttf') format('truetype'),
+         url('../fonts/sansation_regular-webfont.svg#sansation') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'sansation';
+    src: url('../fonts/sansation_bold-webfont.eot');
+    src: url('../fonts/sansation_bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/sansation_bold-webfont.woff') format('woff'),
+         url('../fonts/sansation_bold-webfont.ttf') format('truetype'),
+         url('../fonts/sansation_bold-webfont.svg#sansation') format('svg');
+    font-weight: bold;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'sansation-l';
+    src: url('../fonts/sansation_light-webfont.eot');
+    src: url('../fonts/sansation_light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/sansation_light-webfont.woff') format('woff'),
+         url('../fonts/sansation_light-webfont.ttf') format('truetype'),
+         url('../fonts/sansation_light-webfont.svg#sansation') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+*{
+	margin: 0;
+	padding: 0;
+	font-family: sansation, Helvetica;
+	font-size: 13px;
+}
+.point-bullet{
+	width: 30px;
+	height: 30px;
+	background: url(../images/180/bullet.png) no-repeat;
+	cursor: pointer;
+	z-index: 9;
+}
+.point-content{
+	width: 150px;
+	position: absolute;
+	z-index: 99;
+}
+.scroll-content{
+	background: url(../images/template/transparent_bg.gif);
+}
+.point-text{
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	background: url(../images/180/text_bg.png);
+	color: #fff;
+	padding: 10px 15px;
+	text-transform: uppercase;
+	text-align: center;
+}
+.point-text .thumb{
+	margin-top: 8px;
+	padding: 10px 5px;
+	border: 1px solid #aaa;
+}
+.point-text .thumb img{
+	width: 100px;
+}
+.controls{
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	z-index: 9;
+}
+#legend{
+	float: left;
+	opacity: 0.6;
+	filter: alpha(opacity=60);
+	background-color: #000;
+	color:#fff;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	padding: 6px 10px;
+	margin-right: 10px;
+}
+.controls a{
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	opacity: 0.6;
+	filter: alpha(opacity=60);
+	background-color: #000;
+	color: #fff;
+	font: bold 11px/14px Arial, sans-serif;
+	text-decoration: none;
+	padding: 6px 7px;
+	cursor: pointer;
+	-webkit-transition: all .25s linear;
+	-moz-transition: all .25s linear;
+	-o-transition: all .25s linear;
+	-ms-transition: all .25s linear;
+	transition: all .25s linear;
+	display: block;
+	float: left;
+	margin-right: 5px;
+}
+.controls a span{
+	width: 10px;
+	background: url(../images/180/controls.png) no-repeat;
+	display: block;
+	text-indent: -999px;
+	overflow: hidden;
+}
+.controls a.prev span{
+	height: 14px;
+	background-position: 0 0;
+	margin: 0px 1px;
+}
+.controls a.stop span{
+	height: 10px;
+	background-position: -22px -2px;
+	margin: 2px 1px;
+}
+.controls a.next span{
+	height: 14px;
+	background-position: -11px 0;
+	margin: 0px 1px;
+}
+.point-arrow{
+	height: 20px;
+}
+.neighboehood-logo{
+	position: absolute;
+	z-index: 9;
+	top: 30px;
+	left: 50px;
+}
+.neighboehood-logo img{
+	width: 300px;
+}
+

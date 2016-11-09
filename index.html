@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+	<head>
+		<meta http-equiv="Content-Type" contet="text/html, charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<title>OTM APP</title>
+		<link href='css/global.css' rel='stylesheet' type='text/css'>
+		<link href='css/180.css' rel='stylesheet' type='text/css'>
+		
+		<link href='css/floorplans.css' rel='stylesheet' type='text/css'>
+		<link href='css/jquery.touchpanview.css' rel='stylesheet' type='text/css'>
+		<link href='css/jquery-ui-1.10.3.custom.min.css' rel='stylesheet' type='text/css'>
+		
+		<link href='jplayer/video-js.min.css' rel='stylesheet' type='text/css'>
+		<!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>-->
+		<script src="js/jquery-1.10.2.js"></script>
+		<script src="js/global.js"></script>
+		<script src="jplayer/video.js"></script>
+		<script src="js/iscroll-pure.js"></script>
+		<script src="js/180.js"></script>
+		
+		<script src="js/floorplans.js"></script>
+		<script src="js/jquery.touchpanview.js"></script>
+		<script src="js/jquery.easing.js"></script>
+		<script src="js/jquery.jgestures.js"></script>
+		<script src="js/jquery-ui-1.10.3.custom.min.js"></script>
+
+		<script type="text/javascript">
+			videojs.options.flash.swf = "/jplayer/video-js.swf";
+		</script>
+	</head>
+	<body>
+		<div id="wrapper">
+		<div class="close_menu_button menu_button" onclick="expandMenu('0')" ></div>
+		<div class="open_menu_button menu_button" onclick="expandMenu('1')" ></div>
+		<div id="menu">
+			<div class="logo" onclick="changePage('page_home')"></div>
+			<ul>
+				<li class="parent"  data-id="0" >
+					<a href="javascript:void(0)" onclick="changePage('page_about')">ABOUT</a>
+				</li>
+					<li class="sub_menu_item" data-parent="0"><a href="javascript:void(0)" onclick="galleryPage('gallery_zaha')">ZAHA IMAGE GALLERY</a></li>
+				<li class="parent" data-id="1">
+					<a href="javascript:void(0)"  onclick="changePage('page_design')">DESIGN</a>
+				</li>
+					<li class="sub_menu_item" data-parent="1"><a href="javascript:void(0)" onclick="galleryPage('gallery_ext_render')">EXT. RENDERINGS GALLERY</a></li>
+				<li  class="parent" data-id="2" >
+					<a href="javascript:void(0)"onclick="changePage('page_building')">BUILDING</a>
+				</li>
+					<li class="sub_menu_item" data-parent="2"><a href="javascript:void(0)" onclick="galleryPage('gallery_int_render')">INT. RENDERINGS GALLERY</a></li>
+					<li class="sub_menu_item" data-parent="2"><a href="javascript:void(0)" onclick="changePage('page_amenities')">AMENITIES LIST</a></li>
+				<li class="parent" data-id="3">
+					<a href="javascript:void(0)"  onclick="changePage('page_residences')">RESIDENCES</a>
+				</li>
+					<li class="sub_menu_item" data-parent="3"><a href="javascript:void(0)" onclick="galleryPage('gallery_int_render')">INT. RENDERING GALLERY</a></li>
+					<li class="sub_menu_item" data-parent="3"><a href="javascript:void(0)" onclick="changePage('page_floorplans')">FLOORPLANS</a></li>
+					<li class="sub_menu_item" data-parent="3"><a href="javascript:void(0)" onclick="changePage('page_features')">FEATURES LIST</a></li>
+				<li class="parent"><a href="javascript:void(0)" onclick="changePage('page_neightborhood')">NEIGHBORHOOD</a></li>
+				<li class="parent"><a href="javascript:void(0)" onclick="changePage('page_video')">VIDEO</a></li>
+			</ul>
+		</div>
+		<div id="content">
+			<div class="contents home_page">
+			</div>
+		</div>
+		</div>
+		<script type="text/javascript" src="phonegap.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript">
+            app.initialize();
+        </script>
+	</body>
+</html>
